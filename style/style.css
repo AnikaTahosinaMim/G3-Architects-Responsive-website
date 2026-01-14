@@ -6,3 +6,70 @@
   font-weight: 400;
   font-style: normal;
 }
+.bg-primari{
+    background-color: #FF900E;
+    color: #FFFFFF;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+
+
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.text-gray{
+    color: #424242;
+}
+.text-light-gray{
+color: #727272;
+}
+.display-flex{
+    display: flex;
+}
+.navbar{
+    justify-content: space-between; 
+    align-items: center;
+}
+.item{
+    list-style: none;
+    margin-right: 20px;
+}
+.link{
+    text-decoration: none;
+    font-weight: 500px;
+}
+.navbar,.banner{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+.brand{
+    font-family: 700;
+    font-size: 3rem;
+}
+/* banner */
+.container{
+    max-width: 860px;
+    margin:0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner-para{
+    font-size: 1rem;
+    color: #727272;
+}
+.banner-img{
+    width: 100%;
+}
+@media screen and (max-width:576px) {
+    .navbar,.nav-link{
+        flex-direction: column;
+    }
+    
+}
