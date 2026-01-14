@@ -67,8 +67,83 @@ color: #727272;
 .banner-img{
     width: 100%;
 }
+
+
+/* main section */
+main{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+main section>*{
+    margin-top: 130px;
+}
+.trems{
+    align-items: center;
+    gap: 50px;
+}
+.tream-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.text-container{
+    max-width: 530px;
+}
+.part-01{
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #727272;
+}
+.part-02{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: black;
+}
+.part-03{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #FF900E;
+}
+/* this is style for card section */
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.card{
+    width: 240px;
+    height: 240px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card,.fact-number{
+    font-weight: 2.8rem;
+    font-size: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.fact-name{
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #727272;
+}
+.fact-img{
+    margin-top: 50px;
+}
 @media screen and (max-width:576px) {
-    .navbar,.nav-link{
+    .navbar,
+    .nav-link,
+    .trems{
+        flex-direction: column;
+    }
+    .tream-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width:577px) and (max-width:992px){
+    .trems{
         flex-direction: column;
     }
     
