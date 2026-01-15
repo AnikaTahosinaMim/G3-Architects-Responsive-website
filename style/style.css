@@ -103,13 +103,56 @@ main section > * {
   color: #ff900e;
 }
 /* this part for features */
-.feature-title{
-    border-left: 5px solid #ff900e;
-    font-size: 1.25rem;
-    font-weight: bold;
-    padding-left: 20px;
+.feature-title {
+  border-left: 5px solid #ff900e;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-left: 20px;
 }
-
+/* freatures loves and care */
+.features {
+  display: flex;
+  gap: 130px;
+}
+.feature-head-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.features-card h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.feature-img img {
+  width: 100%;
+}
+.features-card {
+  padding: 20px;
+  box-shadow: 0 4px 30px #c4adad;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.features-btn {
+  padding: 45px 42px;
+  background-color: #ff900e;
+  border-radius: 8px;
+  border: none;
+  margin-left: -100px;
+  margin-top: -120px;
+}
+.year {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+}
 
 /* this is style for card section */
 .fact-container {
@@ -141,53 +184,67 @@ main section > * {
   margin-top: 50px;
 }
 /* this part for sponspors */
-.sponsor{
-    width: 540px;
-    margin: 50px auto;
-    align-items: center;
+.sponsor {
+  width: 540px;
+  margin: 50px auto;
+  align-items: center;
 }
 .sponsor-title {
   font-size: 2.5rem;
   font-weight: bold;
 }
-.sponsors-company{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
+.sponsors-company {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
-.sponsors-company img{
-    filter: grayscale(100%);
+.sponsors-company img {
+  filter: grayscale(100%);
+}
+/* footer */
+footer {
+  width: 1440px;
+  background-color: #FFF4E7;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
 }
 @media screen and (max-width: 576px) {
+  .features-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .navbar,
   .nav-link,
-  .trems {
+  .trems,
+  .features {
     flex-direction: column;
   }
   .tream-img-container,
   .fact-container,
-  .sponsors-company
-  {
+  .sponsors-company {
     grid-template-columns: repeat(1, 1fr);
   }
   .fact-container {
     justify-items: center;
     gap: 24px;
   }
-  .sponsors-company{
+  .sponsors-company {
     gap: 50px;
     justify-items: center;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  .trems {
+  .trems,
+  .features {
     flex-direction: column;
   }
-  .sponsors-company{
-    grid-template-columns: repeat(3,1fr);
+  .sponsors-company {
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
   }
-  .fact-container{
-    grid-template-columns: repeat(2,1fr);
+  .fact-container {
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
 }
